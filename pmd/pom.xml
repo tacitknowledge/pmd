@@ -3,44 +3,24 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.tacitknowledge</groupId>
     <artifactId>pmd</artifactId>
-    <name>PMD</name>
+    <name>Tacit Knowledge PMD Fork</name>
     <!-- version below matches the tag at https://github.com/tacitknowledge/pmd.git on the tkpmd branch -->
     <version>5.1.0-TK-1.0</version>
 
     <parent>
-        <groupId>org.sonatype.oss</groupId>
+        <groupId>com.tacitknowledge</groupId>
         <artifactId>oss-parent</artifactId>
-        <version>7</version>
+        <version>2</version>
     </parent>
 
     <description>
     <![CDATA[
-<p>PMD scans Java source code and looks for potential problems like:</p>
-<ul>
-  <li>Possible bugs - empty try/catch/finally/switch statements</li>
-  <li>Dead code - unused local variables, parameters and private methods</li>
-  <li>Suboptimal code - wasteful String/StringBuffer usage</li>
-  <li>Overcomplicated expressions - unnecessary if statements, for loops that could be while loops</li>
-  <li>Duplicate code - copied/pasted code means copied/pasted bugs</li>
-</ul>
-<p>You can <b><a href="http://sourceforge.net/project/showfiles.php?group_id=56262">download everything from here</a></b>, and you can get an overview of all the rules at the <a href="rules/index.html">rulesets index</a> page.</p>
-<p>PMD is <a href="integrations.html">integrated</a> with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.</p>
+    <p>This is a fork of the github/pmd/pmd project located at</p>
+    <p>    https://github.com/pmd/pmd</p>
+    <p>The fork is at https://github.com/tacitknowledge/pmd </p>
     ]]>
   </description>
-    <url>http://pmd.sourceforge.net/</url>
-    <issueManagement>
-        <url>http://sourceforge.net/tracker/?group_id=56262</url>
-    </issueManagement>
-    <ciManagement>
-        <notifiers>
-            <notifier>
-                <configuration>
-                    <address>tom@infoether.com</address>
-                </configuration>
-            </notifier>
-        </notifiers>
-    </ciManagement>
-    <inceptionYear>2002</inceptionYear>
+    <inceptionYear>2012</inceptionYear>
     <licenses>
         <license>
             <name>BSD-style</name>
@@ -48,198 +28,31 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    <mailingLists>
-        <mailingList>
-            <name>PMD development</name>
-            <subscribe>http://lists.sourceforge.net/lists/listinfo/pmd-devel</subscribe>
-            <unsubscribe>http://lists.sourceforge.net/lists/listinfo/pmd-devel</unsubscribe>
-            <archive>http://sourceforge.net/mailarchive/forum.php?forum=pmd-devel</archive>
-        </mailingList>
-    </mailingLists>
+    <url>https://github.com/tacitknowledge/pmd</url>
+    <scm>
+        <connection>scm:git:https://github.com/tacitknowledge/pmd.git</connection>
+        <developerConnection>scm:git:git@github.com:tacitknowledge/pmd.git</developerConnection>
+        <url>https://github.com/tacitknowledge/pmd</url>
+    </scm>
     <developers>
         <developer>
-            <id>tomcopeland</id>
-            <name>Tom Copeland</name>
-            <email>tom@infoether.com</email>
-            <organization>InfoEther</organization>
-            <roles>
-                <role>Developer</role>
-            </roles>
+            <id>mshort</id>
+            <name>Matthew Short</name>
+            <email>mshort at tacitknowledge.com</email>
+            <organization>Tacit Knowledge</organization>
         </developer>
         <developer>
-            <id>dpeugh</id>
-            <name>David Dixon-Peugh</name>
-            <email>ddp@apache.org</email>
-            <organization>Lockheed Martin Corporation</organization>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>olemartin</id>
-            <name>Ole-Martin Mork</name>
-            <email>olemartin@users.sourceforge.net</email>
-            <organization>Bekk Consulting</organization>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>mikkey</id>
-            <name>Miguel Griffa</name>
-            <email>mikkey@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>phherlin</id>
-            <name>Philippe Herlin</name>
-            <email>phherlin@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>jigerjava</id>
-            <name>Jiger Patel</name>
-            <email>jigerjava@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>kubacki</id>
-            <name>Radim Kubacki</name>
-            <email>kubacki@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>tomslot</id>
-            <name>Tomasz Slota</name>
-            <email>tomslot@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>ezust</id>
-            <name>Alan Ezust</name>
-            <email>ezust@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>nascif</id>
-            <name>Nascif Abousalh Neto</name>
-            <email>nascif@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>allancaplan</id>
-            <name>Allan Caplan</name>
-            <email>allancaplan@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>holobender</id>
-            <name>Sven Jacob</name>
-            <email>holobender@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>wfzelle</id>
-            <name>Wouter Zelle</name>
-            <email>wfzelle@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>hooperbloob</id>
-            <name>Brian Remedios</name>
-            <email>hooperbloob@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>xlv</id>
-            <name>Xavier Le Vourch</name>
-            <email>xlv@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>rgustav</id>
-            <name>Ryan Gustafson</name>
-            <email>rgustav@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>bluejohn</id>
-            <name>Johan Nagels</name>
-            <email>bluejohn@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>tkleiber</id>
-            <name>Torsten Kleiber</name>
-            <email>tkleiber@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-        <developer>
-            <id>rpelisse</id>
-            <name>Romain Pelisse</name>
-            <email>rpelisse@users.sourceforge.net</email>
-            <url>http://belaran.eu/</url>
-            <organization>Atos Origin</organization>
-            <organizationUrl>https://osc-service.si.fr.atosorigin.com/</organizationUrl>
-            <roles>
-                <role>Developer</role>
-            </roles>
-            <timezone>+1</timezone>
-            <properties>
-                <picUrl>http://belaran.eu/wordpress/wp-content/uploads/2008/05/RomainPELISSE.jpg</picUrl>
-            </properties>
-        </developer>
-        <developer>
-            <id>adangel</id>
-            <name>Andreas Dangel</name>
-            <email>adangel@users.sourceforge.net</email>
-            <roles>
-                <role>Developer</role>
-            </roles>
-            <timezone>+1</timezone>
+            <id>witherspore</id>
+            <name>Matthew Short</name>
+            <email>witherspore at gmail.com</email>
+            <organization>Tacit Knowledge</organization>
         </developer>
     </developers>
-    <scm>
-        <connection>scm:git:git://github.com/pmd/pmd.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/pmd/pmd.git</developerConnection>
-        <url>https://github.com/pmd/pmd</url>
-    </scm>
-    <organization>
-        <name>InfoEther</name>
-        <url>http://pmd.sourceforge.net/</url>
-    </organization>
+
+
     <properties>
         <javacc.version>4.1</javacc.version>
+        <github.repo.name>pmd</github.repo.name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--
              This value actually differs to maven default expectation(src/site/xdoc/) as
@@ -552,221 +365,24 @@
           <version>${javacc.version}</version>
         </dependency>
     </dependencies>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ssh</artifactId>
+         <version>2.2</version>
+      </extension>
+    </extensions>
 
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.3</version>
-            </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.8.1</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>javadoc</report>
-                            <!-- FIXME: The following report fails <report>test-javadoc</report> -->
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
+    <distributionManagement>
+        <!-- to enable scp using keystores, set up your settings.xml for the tk-private-ssh id-->
+        <repository>
+            <id>tk-private-ssh</id>
+            <name>TK Public Repository</name>
+            <url>scp://repo1.tacitknowledge.com:/opt/maven-repo/public</url>
+        </repository>
+    </distributionManagement>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-pmd-plugin</artifactId>
-                <version>2.7.1</version>
-                <configuration>
-                    <linkXref>true</linkXref>
-                    <sourceEncoding>utf-8</sourceEncoding>
-                    <minimumTokens>100</minimumTokens>
-                    <targetJdk>1.6</targetJdk>
-                    <rulesets>
-                        <!--  once the pmd plugin is migrated to pmd-5, we should be able to use the current dogfood configuration -->
-<!--                        <ruleset>src/main/resources/rulesets/internal/dogfood.xml</ruleset> -->
-                        <ruleset>https://pmd.svn.sourceforge.net/svnroot/pmd/branches/pmd/4.3.x/rulesets/internal/dogfood.xml</ruleset>
-                    </rulesets>
-                </configuration>
-            </plugin>
 
-            <!-- Emma is a test coverage tools to be used instead of clover.
-                As the mvn2 plugin is not released yet, the plugin is commented out, so you
-                build won't fail: You can get an Emma plugin for Maven2 at http://jira.codehaus.org/browse/MOJO-762
-                Download the tarball, extract, cd into dir, run $ mvn install. -->
-            <!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>emma-maven-plugin</artifactId>
-                </plugin> -->
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.9.1</version>
-                <configuration>
-                    <configLocation>etc/checkstyle-config.xml</configLocation>
-                </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.4</version>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>summary</report>
-                            <report>dependencies</report>
-                            <report>project-team</report>
-                            <report>mailing-list</report>
-                            <report>cim</report>
-                            <report>issue-tracking</report>
-                            <report>license</report>
-                            <report>scm</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>2.12</version>
-            </plugin>
-            <plugin>
-                <groupId>com.atlassian.maven.plugins</groupId>
-                <artifactId>maven-clover2-plugin</artifactId>
-                <version>2.5.1</version>
-                <configuration>
-                    <licenseLocation>licences/clover2.license</licenseLocation>
-                    <reportDescriptor>etc/default-clover-report.xml</reportDescriptor>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
-
-    <profiles>
-        <profile>
-            <id>pmd-release</id>
-            <properties>
-                <pmd.website.baseurl>http://pmd.sourceforge.net/pmd-${project.version}</pmd.website.baseurl>
-            </properties>
-        </profile>
-        <profile>
-            <id>sf-release</id>
-            <distributionManagement>
-                <repository>
-                    <id>pmd-repo</id>
-                    <name>Default Repository</name>
-                    <url>scp://shell.sourceforge.net/home/project-web/pmd/htdocs/maven2</url>
-                </repository>
-                <site>
-                    <id>pmd-site</id>
-                    <name>Default Site</name>
-                    <url>scp://shell.sourceforge.net/home/project-web/pmd/htdocs/pmd-${project.version}</url>
-                </site>
-            </distributionManagement>
-            <properties>
-                <pmd.website.baseurl>http://pmd.sourceforge.net/pmd-${project.version}</pmd.website.baseurl>
-            </properties>
-            <build>
-                <plugins>
-                    <plugin>
-                      <inherited>true</inherited>
-                      <groupId>org.apache.maven.plugins</groupId>
-                      <artifactId>maven-source-plugin</artifactId>
-                      <executions>
-                        <execution>
-                          <id>attach-sources</id>
-                          <goals>
-                            <goal>jar</goal>
-                          </goals>
-                        </execution>
-                      </executions>
-                    </plugin>
-                    <plugin>
-                      <inherited>true</inherited>
-                      <groupId>org.apache.maven.plugins</groupId>
-                      <artifactId>maven-javadoc-plugin</artifactId>
-                      <executions>
-                        <execution>
-                          <id>attach-javadocs</id>
-                          <goals>
-                              <goal>jar</goal>
-                          </goals>
-                        </execution>
-                      </executions>
-                    </plugin>
-                    <plugin>
-                      <inherited>true</inherited>
-                      <groupId>org.apache.maven.plugins</groupId>
-                      <artifactId>maven-deploy-plugin</artifactId>
-                      <configuration>
-                          <updateReleaseInfo>true</updateReleaseInfo>
-                      </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-
-        <profile>
-            <id>sf-snapshot</id>
-            <distributionManagement>
-                <snapshotRepository>
-                    <id>pmd-snapshot-repo</id>
-                    <name>Snapshot Repository</name>
-                    <url>scp://shell.sourceforge.net/home/project-web/pmd/htdocs/snapshot/maven2</url>
-                    <uniqueVersion>true</uniqueVersion>
-                </snapshotRepository>
-                <site>
-                    <id>pmd-snapshot-site</id>
-                    <name>Default Site</name>
-                    <url>scp://shell.sourceforge.net/home/project-web/pmd/htdocs/snapshot</url>
-                </site>
-            </distributionManagement>
-        </profile>
-
-        <profile>
-            <id>reports</id>
-            <build>
-                <plugins>
-                   <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-pmd-plugin</artifactId>
-                        <version>2.7.1</version>
-                        <executions>
-                            <execution>
-                                <phase>verify</phase>
-                                <goals><goal>pmd</goal></goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <sourceEncoding>utf-8</sourceEncoding>
-                            <minimumTokens>100</minimumTokens>
-                            <targetJdk>1.6</targetJdk>
-                            <rulesets>
-                                <!--  once the pmd plugin is migrated to pmd-5, we should be able to use the current dogfood configuration -->
-<!--                                 <ruleset>src/main/resources/rulesets/internal/dogfood.xml</ruleset> -->
-                                <ruleset>https://pmd.svn.sourceforge.net/svnroot/pmd/branches/pmd/4.3.x/rulesets/internal/dogfood.xml</ruleset>
-                            </rulesets>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-checkstyle-plugin</artifactId>
-                        <version>2.9.1</version>
-                        <executions>
-                            <execution>
-                                <phase>verify</phase>
-                                <goals><goal>checkstyle</goal></goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <configLocation>etc/checkstyle-config.xml</configLocation>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
