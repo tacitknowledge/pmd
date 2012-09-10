@@ -1,5 +1,4 @@
-
-wledge fork of PMD.  https://github.com/pmd/pmd.git
+# Tacit Knowledge fork of PMD.  https://github.com/pmd/pmd.git
 
 This fork supports a couple new CPD features for Java projects
     1. ignoreAnnotations to skip CPD processing of annotations. Annotations often create many redundant lines and false positives.
