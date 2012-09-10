@@ -6,7 +6,7 @@
     <artifactId>pmd</artifactId>
     <name>Tacit Knowledge PMD Fork</name>
     <!-- version below matches the tag at https://github.com/tacitknowledge/pmd.git on the tkpmd branch -->
-    <version>5.1.0-TK-1.0</version>
+    <version>5.1.0-TK-1.0-SNAPSHOT</version>
 
     <parent>
         <groupId>com.tacitknowledge</groupId>
