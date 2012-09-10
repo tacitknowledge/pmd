@@ -290,15 +290,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <branchBase>https://pmd.svn.sourceforge.net/svnroot/pmd/branches/pmd/</branchBase>
-                    <tagBase>https://pmd.svn.sourceforge.net/svnroot/pmd/tags/pmd/</tagBase>
-                    <releaseProfiles>pmd-release</releaseProfiles>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
     <dependencies>
